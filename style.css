@@ -1,0 +1,51 @@
+.A{
+  border: 2px solid blue;
+  padding:15px;
+  margin:10px;
+  text-align: center;
+}
+.Main{
+  background-image: image("background.jpg");
+  border: 2px solid black;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+@media only screen  and (max-width:450px){
+  .Main{
+  border: 2px solid black;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+}
+@media screen and (min-width:425px) and (max-width:768px)
+{
+  .Main{
+  border: 2px solid black;
+  display:flex;
+  flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .Main{
+  border: 2px solid black;
+  display:flex;
+  justify-content: space-around;
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+}
+img{
+  border-radius: 50%;
+}
+img:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#b{
+  background-image:url("background.jpg");
+
+}
